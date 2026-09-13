@@ -1,0 +1,36 @@
+GUIA DE INSTALAÇÃO RÁPIDA - GESTÃO PRO
+
+Pré-requisitos:
+- Servidor Web local (XAMPP / Laragon) ou Hospedagem cPanel com suporte a PHP 8.0+ e MySQL.
+
+Passo a Passo:
+
+1. BANCO DE DADOS:
+- Acesse o seu phpMyAdmin.
+- Crie um novo banco de dados vazio chamado exatamente: financas_db
+- Clique na aba "Importar", selecione o arquivo "schema.sql" que está na 
+  pasta database do projeto e clique em Executar.
+
+2. ARQUIVOS DO PROJETO:
+- Mova a pasta do sistema para dentro do diretório raiz do seu servidor 
+  (ex: htdocs no XAMPP ou public_html na sua hospedagem).
+
+3. CONFIGURAÇÃO DE CONEXÃO:
+- Entre na pasta "config" do projeto.
+- Renomeie o arquivo "config.example.php" para "config.php".
+- Abra o arquivo "config.php" em um editor de texto e ajuste as credenciais 
+  do seu banco de dados (geralmente usuário 'root' e senha em branco no XAMPP) 
+  e certifique-se de que a constante BASE_URL aponta para o link correto do seu projeto.
+
+4. PRIMEIRO ACESSO:
+- Abra o navegador e acesse o endereço do sistema (ex: http://localhost/nome-da-pasta/public/login.php).
+- Faça login com as credenciais padrão:
+  E-mail: admin@empresa.com
+  Senha: admin123
+- Recomendamos alterar seus dados de acesso imediatamente após o primeiro login.
+
+5. ALTERANDO E-MAIL E SENHA DE ACESSO:
+- Após fazer o login com as credenciais padrão, navegue até a aba 
+  "Configurações" ou "Perfil" no menu do sistema.
+- Insira seu novo e-mail e a sua nova senha desejada nos campos correspondentes.
+- Clique em salvar para atualizar os dados de segurança do seu painel.

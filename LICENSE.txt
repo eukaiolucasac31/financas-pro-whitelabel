@@ -1,0 +1,27 @@
+LICENÇA DE USO DE SOFTWARE - GESTÃO PRO WHITELABEL
+
+IMPORTANTE: Ao utilizar, instalar ou copiar este software, você concorda 
+com os termos desta licença.
+
+1. CONCESSÃO DE LICENÇA
+O autor concede ao comprador uma licença vitalícia, não exclusiva e intransferível 
+para utilizar o código-fonte e a estrutura do sistema "Gestão Pro Whitelabel" 
+em servidores de sua propriedade ou sob sua responsabilidade, respeitando 
+a arquitetura Whitelabel para personalização da marca própria.
+
+2. RESTRIÇÕES
+O comprador NÃO ESTÁ AUTORIZADO a:
+- Revender, sublicenciar, alugar ou doar o código-fonte bruto do sistema para 
+  outros desenvolvedores ou terceiros para fins de revenda de software.
+- Distribuir ou publicar o código-fonte em repositórios públicos (como GitHub, 
+  GitLab, etc.).
+
+3. SUPORTE E ATUALIZAÇÕES
+Esta licença contempla o fornecimento do software em seu estado atual ("as is"). 
+Customizações futuras, novas funcionalidades solicitadas ou suporte técnico 
+prolongado deverão ser contratados à parte.
+
+4. ISENÇÃO DE GARANTIA
+O software é fornecido sem garantias de qualquer tipo, expressas ou implícitas. 
+O autor não se responsabiliza por perdas de dados, lucros cessantes ou prejuízos 
+decorrentes do uso ou da incapacidade de uso do sistema.
