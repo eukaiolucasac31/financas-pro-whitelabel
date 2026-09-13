@@ -64,4 +64,4 @@ Um sistema completo de gestão financeira e controle de fluxo de caixa desenvolv
 Este software é distribuído sob licença comercial proprietária. A revenda, cópia não autorizada ou redistribuição do código-fonte sem a devida licença é estritamente proibida.
 
 ---
-*Desenvolvido por [Seu Nome / Seu Portfólio].*
+*Desenvolvido por Kaio Lucas*
