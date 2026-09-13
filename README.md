@@ -48,9 +48,14 @@ Um sistema completo de gestão financeira e controle de fluxo de caixa desenvolv
 
 ## 5 - Demonstração Visual (Screenshots)
 
-- **Dashboard & Gráficos:** *(Inserir print)*
-- **Lançamentos & Máscaras:** *(Inserir print)*
-- **Painel Whitelabel:** *(Inserir print)*
+- **Dashboard & Gráficos:** <img width="1911" height="929" alt="image" src="https://github.com/user-attachments/assets/5179b3bd-9fa4-470d-aba9-b40d696f5523" />
+- **Relatórios:** <img width="1911" height="927" alt="image" src="https://github.com/user-attachments/assets/a848dd85-5eeb-4ef0-8762-805bb6a0101c" />
+
+
+- **Lançamentos & Máscaras:** <img width="1911" height="926" alt="image" src="https://github.com/user-attachments/assets/d4997627-0c3a-4f94-9cd7-d1e9c43a6a0b" />
+
+- **Painel Whitelabel:** <img width="1911" height="931" alt="image" src="https://github.com/user-attachments/assets/ef91a0f1-b9e2-4fe5-8353-72ada09b2656" />
+
 
 ---
 
