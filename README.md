@@ -1,3 +1,6 @@
+<img width="2056" height="765" alt="e4dfa9c2-15c5-433d-8a3e-a4502e66a9db" src="https://github.com/user-attachments/assets/19a7ddf2-c639-4a21-8c32-14cb25e909b0" />
+
+
 # 1 - Gestão - Sistema Financeiro Whitelabel (SaaS)
 
 Um sistema completo de gestão financeira e controle de fluxo de caixa desenvolvido em **PHP Nativo (PDO)**, estruturado com arquitetura **Whitelabel (Marca Branca)**. O software foi pensado para ser comercializado para pequenas e médias empresas ou utilizado como base para produtos SaaS.
