@@ -1,0 +1,148 @@
+/* ==========================================================================
+   TEMA DARK INSPIRADO NA STEAM - GESTÃO PRO
+   ========================================================================== */
+:root {
+    --bg-base: #171a21;
+    --bg-panel: #1b2838;
+    --bg-hover: #2a475e;
+    --text-primary: #c7d5e0;
+    --text-muted: #8f98a0;
+    --accent-color: #66c0f4;
+    --accent-hover: #417a9b;
+    --danger-color: #ff595e;
+    --success-color: #8cc414;
+    --border-color: #2a475e;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+}
+
+/* ---------------------------------------------------
+   1. NAVBAR PRINCIPAL
+--------------------------------------------------- */
+.navbar {
+    background-color: var(--bg-panel);
+    padding: 0.75rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-brand img { height: 45px; object-fit: contain; border-radius: 4px; }
+.logo-fallback { 
+    width: 45px; height: 45px; background: linear-gradient(135deg, var(--bg-hover), var(--accent-hover)); 
+    border-radius: 8px; display: flex; align-items: center; justify-content: center; 
+    font-weight: bold; font-size: 1.5rem; color: #fff; box-shadow: inset 0 0 5px rgba(0,0,0,0.5); 
+}
+
+.nav-links { display: flex; gap: 10px; }
+.nav-links a { color: var(--text-primary); text-decoration: none; font-weight: 500; padding: 10px 16px; border-radius: 4px; transition: all 0.2s ease-in-out; font-size: 0.95rem; }
+.nav-links a:hover { background-color: var(--bg-hover); color: var(--accent-color); }
+.nav-links a.logout:hover { background-color: rgba(255, 89, 94, 0.1); color: var(--danger-color); }
+
+/* ---------------------------------------------------
+   2. LAYOUT GERAL E HEADERS
+--------------------------------------------------- */
+.container { max-width: 1200px; margin: 2rem auto; padding: 0 1.5rem; }
+.page-header, .dashboard-header { 
+    display: flex; justify-content: space-between; align-items: center; 
+    margin-bottom: 2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; 
+}
+.page-header h2, .dashboard-header h2 { margin: 0; font-size: 1.8rem; color: #fff; }
+
+/* ---------------------------------------------------
+   3. CARDS, GRIDS E DASHBOARD
+--------------------------------------------------- */
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+.stat-card { background: var(--bg-panel); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border-color); display: flex; flex-direction: column; position: relative; overflow: hidden; }
+.stat-card::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; }
+.stat-card.receitas::before { background: var(--success-color); }
+.stat-card.despesas::before { background: var(--danger-color); }
+.stat-card.saldo::before { background: var(--accent-color); }
+.stat-title { font-size: 0.9rem; text-transform: uppercase; color: var(--text-muted); font-weight: bold; letter-spacing: 1px; }
+.stat-value { font-size: 2rem; font-weight: bold; color: #fff; margin-top: 0.5rem; }
+
+.chart-container { background: var(--bg-panel); padding: 2rem; border-radius: 8px; border: 1px solid var(--border-color); height: 400px; }
+.card-form, .filter-box, .settings-card { background: var(--bg-panel); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border-color); margin-bottom: 2rem; }
+.settings-card { max-width: 600px; margin: 0 auto; }
+
+/* ---------------------------------------------------
+   4. FORMULÁRIOS E BOTÕES
+--------------------------------------------------- */
+.form-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1rem; }
+.form-group { margin-bottom: 1.25rem; }
+.form-group label { display: block; margin-bottom: 0.5rem; font-size: 0.85rem; color: var(--text-muted); font-weight: bold; text-transform: uppercase; }
+input[type="text"], input[type="email"], input[type="password"], input[type="date"], input[type="file"], select { 
+    width: 100%; padding: 0.75rem; border-radius: 4px; border: 1px solid var(--border-color); 
+    background: var(--bg-base); color: #fff; box-sizing: border-box; font-size: 1rem; transition: border-color 0.2s; 
+}
+input:focus, select:focus { outline: none; border-color: var(--accent-color); }
+
+.btn { background: var(--accent-color); color: var(--bg-base); border: 0; padding: 0.75rem 1.5rem; border-radius: 4px; font-weight: bold; cursor: pointer; transition: 0.2s; }
+.btn:hover { background: var(--accent-hover); color: #fff; }
+.btn-danger { background: rgba(255, 89, 94, 0.1); color: var(--danger-color); border: 1px solid var(--danger-color); padding: 0.4rem 0.8rem; border-radius: 4px; cursor: pointer; }
+.btn-danger:hover { background: var(--danger-color); color: #fff; }
+
+.alert { background: rgba(102, 192, 244, 0.1); border: 1px solid var(--accent-color); padding: 1rem; border-radius: 4px; margin-bottom: 1rem; }
+.alert.sucesso { background: rgba(140, 196, 20, 0.1); border: 1px solid var(--success-color); color: var(--success-color); }
+.alert.erro { background: rgba(255, 89, 94, 0.1); border: 1px solid var(--danger-color); color: var(--danger-color); }
+
+/* ---------------------------------------------------
+   5. TABELAS
+--------------------------------------------------- */
+.table-container { background: var(--bg-panel); border-radius: 8px; border: 1px solid var(--border-color); overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+th { color: var(--text-muted); font-size: 0.85rem; text-transform: uppercase; font-weight: bold; background: var(--bg-base); }
+.badge-receita { color: var(--success-color); font-weight: bold; }
+.badge-despesa { color: var(--danger-color); font-weight: bold; }
+
+/* ---------------------------------------------------
+   6. TELA DE LOGIN (Específico)
+--------------------------------------------------- */
+.login-body { display: flex; align-items: center; justify-content: center; height: 100vh; background: var(--bg-base); }
+.login-box { background: var(--bg-panel); padding: 2.5rem; border-radius: 8px; width: 100%; max-width: 400px; box-shadow: 0 8px 24px rgba(0,0,0,0.5); border: 1px solid var(--border-color); }
+.login-box .brand-logo { text-align: center; margin-bottom: 2rem; }
+.login-box .brand-logo img { max-height: 60px; }
+.login-box .brand-logo h1 { margin: 10px 0 0; font-size: 1.5rem; color: #fff; }
+.btn-login { background: linear-gradient(to right, #47bfff 5%, #1a44c2 60%); color: #fff; width: 100%; font-size: 1rem; padding: 0.85rem; border: 0; border-radius: 4px; font-weight: bold; cursor: pointer; transition: filter 0.2s; }
+.btn-login:hover { filter: brightness(1.2); }
+
+/* ---------------------------------------------------
+   7. RELATÓRIOS
+--------------------------------------------------- */
+.report-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.report-card { background: var(--bg-panel); padding: 2rem; border-radius: 8px; border: 1px solid var(--border-color); text-align: center; }
+.report-card h3 { margin-top: 0; color: var(--text-muted); font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; }
+.report-value { font-size: 2.5rem; font-weight: bold; }
+.val-positivo { color: var(--success-color); }
+.val-negativo { color: var(--danger-color); }
+.val-neutro { color: var(--accent-color); }
+
+@media (max-width: 768px) {
+    .report-grid { grid-template-columns: 1fr; }
+    .stats-grid { grid-template-columns: 1fr; }
+}
+
+/* ---------------------------------------------------
+   8. RODAPÉ E EXTRAS
+--------------------------------------------------- */
+.footer { text-align: center; padding: 2rem 0; font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid var(--border-color); margin-top: 3rem; }
+.preview-img { max-height: 60px; margin-top: 10px; border-radius: 4px; }

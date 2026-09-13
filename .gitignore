@@ -1,0 +1,13 @@
+# Arquivos de Configuração Local
+config/config.php
+
+# Arquivos de upload dinâmicos dos clientes
+uploads/logos/*
+uploads/icons/*
+!uploads/logos/.gitkeep
+!uploads/icons/.gitkeep
+
+# Logs do servidor e SO
+*.log
+.DS_Store
+Thumbs.db
